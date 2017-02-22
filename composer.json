@@ -1,0 +1,29 @@
+{
+    "name": "dimarick/twig-source-map-bundle",
+    "description": "Provide symfony integration for dimarick/twig-source-map",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dimarick",
+            "email": "dimon.ksk@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dimarick\\TwigSourceMap\\": "src/Dimarick/TwigSourceMap/"
+        }
+    },
+    "repositories": [
+        {
+            "url": "git@github.com:dimarick/twig-source-map.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "php": "~5.6|~7.0",
+        "twig/twig": "~2.0|~1.30",
+        "symfony/framework-bundle": "~3.0",
+        "dimarick/twig-source-map": "dev-master"
+    }
+}
