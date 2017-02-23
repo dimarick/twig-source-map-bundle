@@ -1,6 +1,6 @@
 <?php
 
-namespace Knp\Bundle\PaginatorBundle\DependencyInjection;
+namespace TwigSourceMapBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

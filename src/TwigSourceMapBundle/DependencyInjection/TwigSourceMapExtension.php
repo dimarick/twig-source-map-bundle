@@ -1,11 +1,10 @@
 <?php
 
-namespace Knp\Bundle\PaginatorBundle\DependencyInjection;
+namespace TwigSourceMapBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\Definition\Processor;
-use TwigSourceMapBundle\Twig\Environment;
 
 class TwigSourceMapExtension extends Extension
 {
@@ -23,8 +22,7 @@ class TwigSourceMapExtension extends Extension
         $config = $processor->processConfiguration($configuration, $configs);
 
         if ($config['enabled']) {
-        	$twigDefinition = $container->getDefinition('twig');
-        	$twigDefinition->setClass(Environment::class);
+        	$container->setParameter('twig_source_map.enabled', true);
 		}
     }
 }
