@@ -14,7 +14,7 @@ class Configuration implements ConfigurationInterface
         $builder->root('twig_source_map')
             ->addDefaultsIfNotSet()
             ->children()
-				->booleanNode('enabled')->defaultFalse()->end()
+                ->booleanNode('enabled')->defaultFalse()->end()
             ->end()
         ;
         return $builder;

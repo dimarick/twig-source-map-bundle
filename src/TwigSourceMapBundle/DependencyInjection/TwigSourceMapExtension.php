@@ -22,7 +22,7 @@ class TwigSourceMapExtension extends Extension
         $config = $processor->processConfiguration($configuration, $configs);
 
         if ($config['enabled']) {
-        	$container->setParameter('twig_source_map.enabled', true);
-		}
+            $container->setParameter('twig_source_map.enabled', true);
+        }
     }
 }
